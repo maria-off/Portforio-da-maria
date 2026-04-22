@@ -1,0 +1,238 @@
+
+<style>
+ .proj-card {
+   background: rgba(255,255,255,0.05);
+   border: 1px solid rgba(245,200,66,0.2);
+   border-radius: 18px;
+   overflow: hidden;
+   transition: all 0.3s ease;
+ }
+ .proj-card:hover {
+   transform: translateY(-6px);
+   border-color: var(--gold);
+   box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+ }
+ .proj-thumb {
+   height: 150px;
+   display: flex; 
+   align-items: center;
+ }
+ :root {
+  --purple-dark: #2d1b4e;
+  --purple-mid: #4a2c7a;
+  --purple-light: #7b4fa6;
+  --gold: #f5c842;
+  --gold-dark: #c9a227;
+  --pink: #e8a0c0;
+  --cream: #fff8f0;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--purple-dark);
+  color: var(--cream);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+header p {
+  color: rgba(255,248,240,0.7);
+  font-size: 1rem;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proj-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(245,200,66,0.2);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+.proj-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.proj-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.proj-desc {
+  font-size: 0.9rem;
+  color: rgba(255,248,240,0.7);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.proj-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 700;
+  border: 1px solid rgba(245,200,66,0.4);
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+.proj-link:hover {
+  background: rgba(245,200,66,0.15);
+  color: var(--purple-dark);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: rgba(255,248,240,0.5);
+  border-top: 1px solid rgba(245,200,66,0.2);
+}
+footer span { color: var(--gold); }
+
+</style>
+<section id="projetos">
+  <div class="section-inner">
+    <div class="section-label">✦ portfólio ✦</div>
+    <h2 class="section-title">Meus <span>Projetos</span></h2>
+
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-thumb">💻</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 1 - Variáveis</h3>
+          <p class="proj-desc">Exercício de lógica com variáveis em JavaScript.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/variaveis" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 2 - Teste</h3>
+          <p class="proj-desc">Página simples para testes de HTML/CSS.</p>
+          <div class="proj-links">
+            <a href="https://maria-off.github.io/teste/teste.html" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 3 - Terceirão</h3>
+          <p class="proj-desc">Página simples para testes o JavaScript</p>
+          <div class="proj-links">
+            <a href="https://maria-off.github.io/Terceir-o-2026/teste.html" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 4 - Agenda Escolar Digital</h3>
+          <p class="proj-desc">Página sobre um app da genda escolar.</p>
+          <div class="proj-links">
+            <a href="https://gamma.app/docs/Agenda-Escolar-Digital-eecx4lgl6d43c8i?mode=doc" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 5 - O Universo da Propriedade Intelectual</h3>
+          <p class="proj-desc">Página explicando sobre inteligencia artificial</p>
+          <div class="proj-links">
+            <a href="https://gamma.app/docs/O-Universo-da-Propriedade-Intelectual-Protegendo-a-Inovacao-e-a-C-81yhzqzlh6ygpji?mode=doc" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 6 - Usando o For</h3>
+          <p class="proj-desc">Página de JavaScript.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/Usando-For" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 7 - Breake</h3>
+          <p class="proj-desc">Página simples.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/breake-continue" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 8 - Breake</h3>
+          <p class="proj-desc">Página simples.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/filtra" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 9 - Ecossistema de Startup</h3>
+          <p class="proj-desc">Uma apresentação de ads.</p>
+          <div class="proj-links">
+            <a href="https://gamma.app/docs/Ecossistema-de-Startups-2026-A-Nova-Era-dos-Unicornios-Latino-Ame-rrlvid92y60z8at target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 10 - SelectionSort</h3>
+          <p class="proj-desc">Página simples.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/SelectionSort" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">🌐</div>
+        <div class="proj-body">
+          <h3 class="proj-title">Projeto 11 - ordenados</h3>
+          <p class="proj-desc">Página simples.</p>
+          <div class="proj-links">
+            <a href="https://github.com/maria-off/ordenados" target="_blank" class="proj-link">🔗 Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Botão de voltar -->
+  <a href="index.html" class="btn-voltar">⬅ Voltar para Página Principal</a>
+  
+</section>
